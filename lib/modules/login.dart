@@ -10,50 +10,50 @@ class LoginPage extends StatelessWidget{
         body: Stack(
             children: <Widget>[
         Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-            image: AssetImage('images/lancer.jpg'), fit: BoxFit.cover)),
+        decoration: new BoxDecoration(
+            image: new DecorationImage(
+            image: new AssetImage('assets/images/lancer.jpeg'), fit: BoxFit.cover)),
     ),
     Container(
     decoration: BoxDecoration(
     gradient: LinearGradient(colors: [
     Colors.transparent,
     Colors.transparent,
-    const Color(0xff161d27).withOpacity(0.9),
-    const Color(0xff161d27),
+     Color(0xff161d27).withOpacity(0.9),
+     Color(0xff161d27),
     ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
     ),
               Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    const Text(
+                     Text(
                       "Welcome!",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 38,
                           fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(
+                     SizedBox(
                       height: 10,
                     ),
                     Text(
                       "Lancer, let's Sign in",
                       style: TextStyle(color: Colors.grey.shade500, fontSize: 16),
                     ),
-                    const SizedBox(
+                     SizedBox(
                       height: 20,
                     ),
                     Container(
                       height: 50,
-                      margin: const EdgeInsets.only(left: 40, right: 40),
+                      margin: EdgeInsets.only(left: 40, right: 40),
                       child: TextField(
-                        style: const TextStyle(fontSize: 16, color: Colors.white),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                         decoration: InputDecoration(
                           hintText: "Email",
                           hintStyle: TextStyle(color: Colors.grey.shade700),
                           filled: true,
-                          fillColor: const Color(0xff161d27).withOpacity(0.9),
+                          fillColor: Color(0xff161d27).withOpacity(0.9),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide(color: colors)),
@@ -63,20 +63,20 @@ class LoginPage extends StatelessWidget{
                         ),
                       ),
                     ),
-                    const SizedBox(
+                     SizedBox(
                       height: 12,
                     ),
                     Container(
                       height: 50,
-                      margin: const EdgeInsets.only(left: 40, right: 40),
+                      margin: EdgeInsets.only(left: 40, right: 40),
                       child: TextField(
                         obscureText: true,
-                        style: const TextStyle(fontSize: 16, color: Colors.white),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                         decoration: InputDecoration(
                           hintText: "Password",
                           hintStyle: TextStyle(color: Colors.grey.shade700),
                           filled: true,
-                          fillColor: const Color(0xff161d27).withOpacity(0.9),
+                          fillColor:  Color(0xff161d27).withOpacity(0.9),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide(color: colors)),
@@ -86,7 +86,7 @@ class LoginPage extends StatelessWidget{
                         ),
                       ),
                     ),
-                    const SizedBox(
+                     SizedBox(
                       height: 12,
                     ),
                     Text(
@@ -94,20 +94,20 @@ class LoginPage extends StatelessWidget{
                       style: TextStyle(
                           color: colors, fontSize: 14, fontWeight: FontWeight.bold),
                     ),
-                    const SizedBox(
+                     const SizedBox(
                       height: 20,
                     ),
                     Container(
                       height: 50,
                       width: double.infinity,
-                      margin: const EdgeInsets.only(left: 40, right: 40),
+                      margin: EdgeInsets.only(left: 40, right: 40),
                       child: FlatButton(
                         onPressed: () {},
                         color: colors,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
-                        child: const Text(
+                        child: Text(
                           "SIGN IN",
                           style: TextStyle(
                               color: Colors.white,
@@ -116,17 +116,17 @@ class LoginPage extends StatelessWidget{
                         ),
                       ),
                     ),
-                    const SizedBox(
+                     SizedBox(
                       height: 16,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        const Text(
+                         Text(
                           "It's your first time here?",
                           style: TextStyle(color: Colors.white),
                         ),
-                        const SizedBox(
+                         SizedBox(
                           width: 8,
                         ),
                         Text(
